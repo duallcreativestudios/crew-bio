@@ -68,6 +68,39 @@
   .mprice::before{content:"S/ ";font-size:.72rem;font-weight:700;color:var(--sage);}
   .dots{flex:1;border-bottom:1px dotted rgba(143,160,127,.4);transform:translateY(-3px);min-width:14px;}
 
+  /* ---------- horarios ---------- */
+  .sched{display:flex;flex-direction:column;gap:10px;}
+  .sblock{display:flex;align-items:center;gap:12px;padding:15px 18px;border-radius:14px;background:rgba(243,237,222,.045);border:1px solid var(--green-line);text-decoration:none;color:var(--cream);transition:transform .16s var(--ease),background .2s,border-color .2s;}
+  .sblock:active{transform:scale(.985);}
+  .sblock.hi{background:var(--terra);border-color:transparent;color:var(--green);}
+  @media(hover:hover){.sblock:not(.hi):hover{border-color:var(--sage);background:rgba(243,237,222,.07);} .sblock.hi:hover{background:var(--terra-deep);}}
+  .sblock .time{font-size:.82rem;font-weight:600;color:var(--cream-dim);white-space:nowrap;flex:0 0 auto;min-width:90px;}
+  .sblock.hi .time{color:rgba(30,46,26,.75);}
+  .sblock .sname{font-weight:800;font-size:1rem;flex:1;letter-spacing:-.01em;}
+  .sblock .blk{font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--cream-dim);white-space:nowrap;}
+  .sblock.hi .blk{color:rgba(30,46,26,.7);}
+  .deflist{margin-top:20px;display:flex;flex-direction:column;gap:15px;}
+  .defrow .dt{font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:var(--terra);font-weight:700;margin-bottom:4px;}
+  .defrow .dd{font-size:.9rem;color:var(--cream-dim);font-weight:500;line-height:1.5;}
+  .defrow .dd b{color:var(--cream);font-weight:700;}
+
+  /* ---------- tarifas ---------- */
+  .tarifas{display:flex;flex-direction:column;gap:12px;}
+  .tcat{border:1px solid var(--green-line);border-radius:16px;background:rgba(243,237,222,.045);padding:14px;}
+  .tcat-label{font-weight:800;font-size:1.04rem;margin-bottom:11px;letter-spacing:-.01em;}
+  .tcat.hi .tcat-label{color:var(--terra);}
+  .tcells{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .tcell{display:flex;flex-direction:column;gap:4px;padding:13px 15px;border-radius:12px;background:var(--green-soft);border:1px solid var(--green-line);text-decoration:none;color:var(--cream);transition:transform .16s var(--ease),background .2s,border-color .2s;}
+  .tcell:active{transform:scale(.97);}
+  @media(hover:hover){.tcell:hover{border-color:var(--sage);background:rgba(243,237,222,.08);}}
+  .tcell .th{font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:var(--cream-dim);font-weight:700;}
+  .tcell .tp{font-weight:900;font-size:1.5rem;letter-spacing:-.02em;}
+  .tcell .tp small{font-size:.72rem;font-weight:700;color:var(--sage);margin-right:1px;}
+  .tcat.hi .tcell{background:var(--terra);border-color:transparent;color:var(--green);}
+  @media(hover:hover){.tcat.hi .tcell:hover{background:var(--terra-deep);}}
+  .tcat.hi .tcell .th{color:rgba(30,46,26,.72);}
+  .tcat.hi .tcell .tp small{color:rgba(30,46,26,.6);}
+
   /* ---------- accordion (CREW CLUB / CREW PARTY) ---------- */
   .acc{border:1px solid var(--green-line);border-radius:var(--radius);background:var(--green-soft);overflow:hidden;}
   .acc-head{
@@ -205,6 +238,46 @@
       La Molina · Lima
     </p>
   </header>
+
+  <!-- TARIFAS CREW -->
+  <section class="gap">
+    <div class="acc reveal">
+      <button class="acc-head" aria-expanded="false" type="button">
+        <span>
+          <span class="acc-kicker">CREW Experience</span>
+          <span class="acc-title">TARIFAS CREW</span>
+          <span class="acc-sub">1 hora o 2 horas · toca para ver</span>
+        </span>
+        <span class="chev" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+      </button>
+      <div class="acc-body"><div class="acc-inner">
+        <div class="tarifas">
+          <div class="tcat hi">
+            <div class="tcat-label">Adulto + niño</div>
+            <div class="tcells">
+              <a class="tcell" href="https://wa.me/51987383855?text=Hola%20CREW%20%21%20Quiero%20comprar%201%20hora%20de%20CREW%20Experience%20para%201%20adulto%20%2B%201%20ni%C3%B1o%20%28S/70%29%2C%20muchas%20gracias%21%21"><span class="th">1 hora</span><span class="tp"><small>S/</small>70</span></a>
+              <a class="tcell" href="https://wa.me/51987383855?text=Hola%20CREW%20%21%20Quiero%20comprar%202%20horas%20de%20CREW%20Experience%20para%201%20adulto%20%2B%201%20ni%C3%B1o%20%28S/100%29%2C%20muchas%20gracias%21%21"><span class="th">2 horas</span><span class="tp"><small>S/</small>100</span></a>
+            </div>
+          </div>
+          <div class="tcat">
+            <div class="tcat-label">Niño adicional</div>
+            <div class="tcells">
+              <a class="tcell" href="https://wa.me/51987383855?text=Hola%20CREW%20%21%20Quiero%20agregar%201%20ni%C3%B1o%20adicional%20por%201%20hora%20%28S/45%29%2C%20muchas%20gracias%21%21"><span class="th">1 hora</span><span class="tp"><small>S/</small>45</span></a>
+              <a class="tcell" href="https://wa.me/51987383855?text=Hola%20CREW%20%21%20Quiero%20agregar%201%20ni%C3%B1o%20adicional%20por%202%20horas%20%28S/80%29%2C%20muchas%20gracias%21%21"><span class="th">2 horas</span><span class="tp"><small>S/</small>80</span></a>
+            </div>
+          </div>
+          <div class="tcat">
+            <div class="tcat-label">Adulto adicional</div>
+            <div class="tcells">
+              <a class="tcell" href="https://wa.me/51987383855?text=Hola%20CREW%20%21%20Quiero%20agregar%201%20adulto%20adicional%20por%201%20hora%20%28S/30%29%2C%20muchas%20gracias%21%21"><span class="th">1 hora</span><span class="tp"><small>S/</small>30</span></a>
+              <a class="tcell" href="https://wa.me/51987383855?text=Hola%20CREW%20%21%20Quiero%20agregar%201%20adulto%20adicional%20por%202%20horas%20%28S/50%29%2C%20muchas%20gracias%21%21"><span class="th">2 horas</span><span class="tp"><small>S/</small>50</span></a>
+            </div>
+          </div>
+        </div>
+        <p class="fine">Puedes venir en cualquier momento con tu crew (de 10:00 am a 7:00 pm).</p>
+      </div></div>
+    </div>
+  </section>
 
   <!-- CARTA CREW -->
   <section class="gap">
