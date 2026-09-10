@@ -62,6 +62,11 @@
   .mcat{margin-top:18px;}
   .mcat:first-of-type{margin-top:4px;}
   .mcat .subhead{margin:0 0 8px;}
+  .mnote{font-size:.78rem;color:var(--cream-dim);font-weight:500;padding:6px 0 2px;line-height:1.45;}
+  .mnote b{color:var(--cream);font-weight:700;}
+  .mprice.tbd{color:var(--cream-dim);font-weight:600;}
+  .mprice.tbd::before{content:"";}
+  .plan .pgo{font-weight:800;font-size:.9rem;white-space:nowrap;letter-spacing:-.01em;}
   .mrow{display:flex;align-items:baseline;gap:6px;padding:6px 0;}
   .mname{font-weight:600;font-size:.98rem;color:var(--cream);}
   .mprice{font-weight:800;font-size:.98rem;color:var(--cream);white-space:nowrap;}
@@ -292,7 +297,7 @@
       </button>
       <div class="acc-body"><div class="acc-inner">
         <p class="carta-cap">Precios en soles (S/).</p>
-        <div class="mcat"><p class="subhead">Espresso Bar</p><div class="mrow"><span class="mname">Espresso</span><span class="dots"></span><span class="mprice">8</span></div><div class="mrow"><span class="mname">Americano</span><span class="dots"></span><span class="mprice">9</span></div><div class="mrow"><span class="mname">Cappuccino</span><span class="dots"></span><span class="mprice">12</span></div><div class="mrow"><span class="mname">Latte</span><span class="dots"></span><span class="mprice">12</span></div><div class="mrow"><span class="mname">Cortado</span><span class="dots"></span><span class="mprice">9</span></div><div class="mrow"><span class="mname">Chocolate</span><span class="dots"></span><span class="mprice">12</span></div><div class="mrow"><span class="mname">Mocaccino</span><span class="dots"></span><span class="mprice">14</span></div><div class="mrow"><span class="mname">1 + 1</span><span class="dots"></span><span class="mprice">16</span></div></div><div class="mcat"><p class="subhead">Slow Bar</p><div class="mrow"><span class="mname">Origami</span><span class="dots"></span><span class="mprice">18</span></div><div class="mrow"><span class="mname">V60</span><span class="dots"></span><span class="mprice">18</span></div><div class="mrow"><span class="mname">V60 NEO</span><span class="dots"></span><span class="mprice">18</span></div></div><div class="mcat"><p class="subhead">Bebidas frías</p><div class="mrow"><span class="mname">Iced Americano</span><span class="dots"></span><span class="mprice">12</span></div><div class="mrow"><span class="mname">Iced Latte</span><span class="dots"></span><span class="mprice">14</span></div><div class="mrow"><span class="mname">Iced Moca</span><span class="dots"></span><span class="mprice">16</span></div><div class="mrow"><span class="mname">Cold Brew a las Rocas</span><span class="dots"></span><span class="mprice">16</span></div><div class="mrow"><span class="mname">Orange Cold Brew</span><span class="dots"></span><span class="mprice">16</span></div><div class="mrow"><span class="mname">Mango Cold Brew</span><span class="dots"></span><span class="mprice">16</span></div></div><div class="mcat"><p class="subhead">Bebidas sin café</p><div class="mrow"><span class="mname">Jugo de mango</span><span class="dots"></span><span class="mprice">14</span></div><div class="mrow"><span class="mname">Jugo de naranja</span><span class="dots"></span><span class="mprice">14</span></div><div class="mrow"><span class="mname">Agua Andea</span><span class="dots"></span><span class="mprice">8</span></div></div><div class="mcat"><p class="subhead">Salados</p><div class="mrow"><span class="mname">Focaccia Mixta</span><span class="dots"></span><span class="mprice">22</span></div><div class="mrow"><span class="mname">Focaccia Capresse</span><span class="dots"></span><span class="mprice">26</span></div><div class="mrow"><span class="mname">Croissant</span><span class="dots"></span><span class="mprice">12</span></div><div class="mrow"><span class="mname">Humita de queso</span><span class="dots"></span><span class="mprice">14</span></div></div><div class="mcat"><p class="subhead">Postres</p><div class="mrow"><span class="mname">Danish de manzana</span><span class="dots"></span><span class="mprice">18</span></div><div class="mrow"><span class="mname">Pan de chocolate</span><span class="dots"></span><span class="mprice">14</span></div><div class="mrow"><span class="mname">Medialuna clásica</span><span class="dots"></span><span class="mprice">10</span></div><div class="mrow"><span class="mname">Medialuna rellena</span><span class="dots"></span><span class="mprice">12</span></div></div><div class="mcat"><p class="subhead">Helados</p><div class="mrow"><span class="mname">Helado de vainilla</span><span class="dots"></span><span class="mprice">14</span></div><div class="mrow"><span class="mname">Helado de frutos rojos</span><span class="dots"></span><span class="mprice">16</span></div><div class="mrow"><span class="mname">Affogato de vainilla</span><span class="dots"></span><span class="mprice">18</span></div><div class="mrow"><span class="mname">Affogato de frutos rojos</span><span class="dots"></span><span class="mprice">20</span></div></div><div class="mcat"><p class="subhead">Bolsa de café</p><div class="mrow"><span class="mname">Perfil chocolate</span><span class="dots"></span><span class="mprice">35</span></div><div class="mrow"><span class="mname">Perfil Blend</span><span class="dots"></span><span class="mprice">40</span></div></div>
+        <div class="mcat"><p class="subhead">Espresso Bar</p><div class="mrow"><span class="mname">Espresso</span><span class="dots"></span><span class="mprice">8</span></div><div class="mrow"><span class="mname">Americano</span><span class="dots"></span><span class="mprice">10</span></div><div class="mrow"><span class="mname">Cappuccino</span><span class="dots"></span><span class="mprice">13</span></div><div class="mrow"><span class="mname">Latte</span><span class="dots"></span><span class="mprice">13</span></div><div class="mrow"><span class="mname">Cortado</span><span class="dots"></span><span class="mprice">10</span></div><div class="mrow"><span class="mname">Chocolate</span><span class="dots"></span><span class="mprice">13</span></div><div class="mrow"><span class="mname">Mocaccino</span><span class="dots"></span><span class="mprice">14</span></div><div class="mrow"><span class="mname">1 + 1</span><span class="dots"></span><span class="mprice">17</span></div><p class="mnote">Adicional · leche de avena o de coco <b>+S/4</b></p></div><div class="mcat"><p class="subhead">Slow Bar</p><div class="mrow"><span class="mname">Origami</span><span class="dots"></span><span class="mprice">18</span></div><div class="mrow"><span class="mname">V60</span><span class="dots"></span><span class="mprice">18</span></div><div class="mrow"><span class="mname">V60 NEO</span><span class="dots"></span><span class="mprice">18</span></div><p class="mnote">Granos: Bourbon Natural · Caturra Honey <b>(Fundo San Crispin)</b></p></div><div class="mcat"><p class="subhead">Bebidas frías</p><div class="mrow"><span class="mname">Iced Americano</span><span class="dots"></span><span class="mprice">12</span></div><div class="mrow"><span class="mname">Iced Latte</span><span class="dots"></span><span class="mprice">15</span></div><div class="mrow"><span class="mname">Iced Moca</span><span class="dots"></span><span class="mprice">17</span></div><div class="mrow"><span class="mname">Cold Brew a las Rocas</span><span class="dots"></span><span class="mprice">16</span></div><div class="mrow"><span class="mname">Orange Cold Brew</span><span class="dots"></span><span class="mprice">16</span></div><div class="mrow"><span class="mname">Mango Cold Brew</span><span class="dots"></span><span class="mprice">16</span></div></div><div class="mcat"><p class="subhead">Bebidas sin café</p><div class="mrow"><span class="mname">Jugo de mango</span><span class="dots"></span><span class="mprice">14</span></div><div class="mrow"><span class="mname">Jugo de naranja</span><span class="dots"></span><span class="mprice">14</span></div><div class="mrow"><span class="mname">Agua Andea</span><span class="dots"></span><span class="mprice">10</span></div></div><div class="mcat"><p class="subhead">Salados</p><div class="mrow"><span class="mname">Focaccia Mixta</span><span class="dots"></span><span class="mprice">22</span></div><div class="mrow"><span class="mname">Focaccia Capresse</span><span class="dots"></span><span class="mprice">26</span></div><div class="mrow"><span class="mname">Croissant</span><span class="dots"></span><span class="mprice">12</span></div><div class="mrow"><span class="mname">Humita de queso</span><span class="dots"></span><span class="mprice">14</span></div><div class="mrow"><span class="mname">Empanadas de queso (2u)</span><span class="dots"></span><span class="mprice">18</span></div><div class="mrow"><span class="mname">Empanadas de queso (3u)</span><span class="dots"></span><span class="mprice">24</span></div></div><div class="mcat"><p class="subhead">Bowls</p><div class="mrow"><span class="mname">Yogurt griego</span><span class="dots"></span><span class="mprice tbd">—</span></div><div class="mrow"><span class="mname">Açai</span><span class="dots"></span><span class="mprice tbd">—</span></div><p class="mnote">Toppings: fresas, arándanos, granola, miel, mantequilla de maní.</p></div><div class="mcat"><p class="subhead">Postres</p><div class="mrow"><span class="mname">Danish de manzana</span><span class="dots"></span><span class="mprice">18</span></div><div class="mrow"><span class="mname">Pan de chocolate</span><span class="dots"></span><span class="mprice">14</span></div><div class="mrow"><span class="mname">Medialuna clásica</span><span class="dots"></span><span class="mprice">10</span></div><div class="mrow"><span class="mname">Medialuna rellena</span><span class="dots"></span><span class="mprice">12</span></div></div><div class="mcat"><p class="subhead">Helados</p><div class="mrow"><span class="mname">Helado de yogurt griego</span><span class="dots"></span><span class="mprice">16</span></div><div class="mrow"><span class="mname">Helado de frutos rojos keto</span><span class="dots"></span><span class="mprice">16</span></div><div class="mrow"><span class="mname">Açai</span><span class="dots"></span><span class="mprice">16</span></div><p class="mnote">Affogato (cualquier sabor) <b>S/18</b></p></div><div class="mcat"><p class="subhead">Bolsa de café</p><div class="mrow"><span class="mname">Perfil chocolate</span><span class="dots"></span><span class="mprice">35</span></div><div class="mrow"><span class="mname">Perfil Blend</span><span class="dots"></span><span class="mprice">40</span></div></div>
       </div></div>
     </div>
   </section>
@@ -310,21 +315,21 @@
       </button>
       <div class="acc-body"><div class="acc-inner">
         <div class="plans">
-          <a class="plan hi" href="https://wa.me/51987383855?text=Hola%20CREW%20%21%20Quiero%20la%20membres%C3%ADa%20de%204%20experiencias%20%28S/360%29%2C%20muchas%20gracias%21%21">
+          <a class="plan hi" href="https://wa.me/51987383855?text=Hola%20CREW%20%21%20Quiero%20la%20membres%C3%ADa%20de%204%20experiencias%2C%20muchas%20gracias%21%21">
             <span><span class="name">4 experiencias</span><span class="meta">Vigencia 30 días</span></span>
-            <span class="price"><small>S/</small>360</span>
+            <span class="pgo">Quiero esta →</span>
           </a>
-          <a class="plan" href="https://wa.me/51987383855?text=Hola%20CREW%20%21%20Quiero%20la%20membres%C3%ADa%20de%206%20experiencias%20%28S/540%29%2C%20muchas%20gracias%21%21">
+          <a class="plan" href="https://wa.me/51987383855?text=Hola%20CREW%20%21%20Quiero%20la%20membres%C3%ADa%20de%206%20experiencias%2C%20muchas%20gracias%21%21">
             <span><span class="name">6 experiencias</span><span class="meta">Vigencia 30 días</span></span>
-            <span class="price"><small>S/</small>540</span>
+            <span class="pgo">Quiero esta →</span>
           </a>
-          <a class="plan" href="https://wa.me/51987383855?text=Hola%20CREW%20%21%20Quiero%20la%20membres%C3%ADa%20de%208%20experiencias%20%28S/720%29%2C%20muchas%20gracias%21%21">
+          <a class="plan" href="https://wa.me/51987383855?text=Hola%20CREW%20%21%20Quiero%20la%20membres%C3%ADa%20de%208%20experiencias%2C%20muchas%20gracias%21%21">
             <span><span class="name">8 experiencias</span><span class="meta">Vigencia 60 días</span></span>
-            <span class="price"><small>S/</small>720</span>
+            <span class="pgo">Quiero esta →</span>
           </a>
-          <a class="plan hi" href="https://wa.me/51987383855?text=Hola%20CREW%20%21%20Quiero%20la%20membres%C3%ADa%20de%2012%20experiencias%20%28S/1000%29%2C%20muchas%20gracias%21%21">
+          <a class="plan hi" href="https://wa.me/51987383855?text=Hola%20CREW%20%21%20Quiero%20la%20membres%C3%ADa%20de%2012%20experiencias%2C%20muchas%20gracias%21%21">
             <span><span class="name">12 experiencias</span><span class="meta">Vigencia 60 días</span></span>
-            <span class="price"><small>S/</small>1000</span>
+            <span class="pgo">Quiero esta →</span>
           </a>
         </div>
         <div class="note">
@@ -340,7 +345,7 @@
     <div class="acc reveal">
       <button class="acc-head" aria-expanded="false" type="button">
         <span>
-          <span class="acc-kicker">Cumpleaños</span>
+          <span class="acc-kicker">Eventos</span>
           <span class="acc-title">CREW PARTY</span>
           <span class="acc-sub">Salón privado, shows, café y decoración · toca para ver</span>
         </span>
@@ -352,73 +357,47 @@
         <div class="pcard">
           <h4>CREW Privado</h4>
           <p class="pdesc">Reserva exclusiva del salón multiusos · máx. 40 invitados (adultos y niños) · 4 h 30 min (1 h preparativos, 3 h CREW Experience, 30 min limpieza) · mesa larga con mantel nude · 4 guías de experiencia · pueden traer bocaditos.</p>
-          <div class="tar">
-            <div class="tar-row"><span class="tar-l">Lunes a jueves<em>Cualquier horario</em></span><b>S/1,000</b></div>
-            <div class="tar-group">
-              <div class="tar-head">Fines de semana y feriados</div>
-              <div class="tar-row"><span class="tar-l">9:30 am — 2:00 pm</span><b>S/1,500</b></div>
-              <div class="tar-row"><span class="tar-l">2:30 pm — 7:00 pm</span><b>S/1,800</b></div>
-            </div>
-          </div>
-          <p class="fine">50% de adelanto para separar la fecha, saldo 3 días antes. S/500 de garantía (se devuelve al terminar).</p>
-          <a class="paybtn" href="https://wa.me/51987383855?text=Hola%20CREW%20%21%20Quiero%20reservar%20un%20CREW%20Party%20%E2%80%94%20CREW%20Privado%2C%20muchas%20gracias%21%21"><span>Reservar CREW Privado</span><span>→</span></a>
+          <a class="paybtn" href="https://wa.me/51987383855?text=Hola%20CREW%20%21%20Quiero%20visitarlos%20para%20tener%20m%C3%A1s%20informaci%C3%B3n%20del%20CREW%20Party%2C%20muchas%20gracias%21%21"><span>Quiero visitarlos</span><span>→</span></a>
         </div>
 
         <!-- CREW Takeover -->
         <div class="pcard">
           <h4>CREW Takeover</h4>
           <p class="pdesc">Reserva de todo el lugar en exclusiva · máx. 80 invitados (adultos y niños) · 4 h 30 min (1 h preparativos, 3 h CREW Experience, 30 min limpieza) · mesa larga con mantel nude · 4 guías de experiencia · pueden traer bocaditos.</p>
-          <div class="tar">
-            <div class="tar-row"><span class="tar-l">Lunes a jueves<em>Cualquier horario</em></span><b>S/2,800</b></div>
-            <div class="tar-group">
-              <div class="tar-head">Fines de semana y feriados</div>
-              <div class="tar-row"><span class="tar-l">9:30 am — 2:00 pm</span><b>S/3,800</b></div>
-              <div class="tar-row"><span class="tar-l">2:30 pm — 7:00 pm</span><b>S/4,500</b></div>
-            </div>
-          </div>
-          <p class="fine">50% de adelanto para separar la fecha, saldo 3 días antes. S/500 de garantía (se devuelve al terminar).</p>
-          <a class="paybtn" href="https://wa.me/51987383855?text=Hola%20CREW%20%21%20Quiero%20reservar%20un%20CREW%20Party%20%E2%80%94%20CREW%20Takeover%2C%20muchas%20gracias%21%21"><span>Reservar CREW Takeover</span><span>→</span></a>
+          <a class="paybtn" href="https://wa.me/51987383855?text=Hola%20CREW%20%21%20Quiero%20visitarlos%20para%20tener%20m%C3%A1s%20informaci%C3%B3n%20del%20CREW%20Party%2C%20muchas%20gracias%21%21"><span>Quiero visitarlos</span><span>→</span></a>
         </div>
 
         <!-- CREW PLUS shows -->
         <p class="subhead">Crew Plus · Shows</p>
         <div class="showrow">
           <div class="showtxt"><b>Iridiscente</b><span>Creación colectiva con canciones en vivo · +3 años · 6 actores · 50 min</span></div>
-          <a class="pill" href="https://wa.me/51987383855?text=Hola%20CREW%20%21%20Quiero%20el%20show%20Iridiscente%20para%20mi%20CREW%20Party%20%28S/2%2C000%29%2C%20muchas%20gracias%21%21">S/2,000</a>
         </div>
         <div class="showrow">
           <div class="showtxt"><b>Debajo del mar</b><span>Show sensorial inmersivo · menores de 3 años · 30 min</span></div>
-          <a class="pill" href="https://wa.me/51987383855?text=Hola%20CREW%20%21%20Quiero%20el%20show%20Debajo%20del%20mar%20para%20mi%20CREW%20Party%20%28S/1%2C000%29%2C%20muchas%20gracias%21%21">S/1,000</a>
         </div>
         <div class="showrow">
           <div class="showtxt"><b>Sound Experience</b><span>Show musical en vivo para los más pequeños · cantante y guitarrista · 40 min</span></div>
-          <a class="pill" href="https://wa.me/51987383855?text=Hola%20CREW%20%21%20Quiero%20el%20show%20Sound%20Experience%20para%20mi%20CREW%20Party%20%28S/1%2C500%29%2C%20muchas%20gracias%21%21">S/1,500</a>
         </div>
         <div class="showrow">
           <div class="showtxt"><b>Taller creativo</b><span>Adaptado a la edad del cumpleañero y a la temática · 30 min</span></div>
-          <a class="pill" href="https://wa.me/51987383855?text=Hola%20CREW%20%21%20Quiero%20el%20Taller%20creativo%20para%20mi%20CREW%20Party%20%28S/1%2C300%29%2C%20muchas%20gracias%21%21">S/1,300</a>
         </div>
         <div class="showrow">
           <div class="showtxt"><b>Caritas pintadas</b><span>Duración 1 hora</span></div>
-          <a class="pill" href="https://wa.me/51987383855?text=Hola%20CREW%20%21%20Quiero%20Caritas%20pintadas%20para%20mi%20CREW%20Party%20%28S/350%29%2C%20muchas%20gracias%21%21">S/350</a>
         </div>
 
         <!-- CREW COFFEE -->
         <p class="subhead">Crew Coffee</p>
         <div class="showrow">
-          <div class="showtxt"><b>Barra libre</b><span>Carta libre para tus invitados con 20% de descuento sobre la cuenta total</span></div>
-          <a class="pill" href="https://wa.me/51987383855?text=Hola%20CREW%20%21%20Quiero%20CREW%20Coffee%20%E2%80%94%20Barra%20libre%20para%20mi%20CREW%20Party%2C%20muchas%20gracias%21%21">20% dcto</a>
+          <div class="showtxt"><b>Barra libre</b><span>Carta libre para tus invitados con descuento especial sobre la cuenta total</span></div>
         </div>
         <div class="showrow">
-          <div class="showtxt"><b>Acompañamiento + bebida</b><span>Un acompañamiento y una bebida por invitado (a cotizar) · 10% de descuento sobre la cuenta total</span></div>
-          <a class="pill soft" href="https://wa.me/51987383855?text=Hola%20CREW%20%21%20Quiero%20CREW%20Coffee%20%E2%80%94%20Acompa%C3%B1amiento%20%2B%20bebida%20para%20mi%20CREW%20Party%2C%20muchas%20gracias%21%21">Cotizar</a>
+          <div class="showtxt"><b>Acompañamiento + bebida</b><span>Un acompañamiento y una bebida por invitado, a coordinar</span></div>
         </div>
 
         <!-- CREW DECORATION -->
         <p class="subhead">Crew Decoration</p>
         <div class="showrow">
           <div class="showtxt"><b>Decoración CREW</b><span>Arco de globos grande a elección, palet personalizado con frase y mesita circular con base para la torta</span></div>
-          <a class="pill" href="https://wa.me/51987383855?text=Hola%20CREW%20%21%20Quiero%20CREW%20Decoration%20para%20mi%20CREW%20Party%20%28S/650%29%2C%20muchas%20gracias%21%21">S/650</a>
         </div>
 
         <!-- MESA SALUDABLE -->
@@ -433,7 +412,7 @@
             <li>01 canastita con chifles</li><li>01 canastita con paliyucas</li>
           </ul>
           <p class="fine">Mobiliario incluido: platos y alturas en colores a elegir, mesa a la altura de los pequeños, decoración impresa en foam según temática (aprox. 4 impresiones de 20 cm), armado y desarmado de mesa.</p>
-          <a class="paybtn" href="https://wa.me/51987383855?text=Hola%20CREW%20%21%20Quiero%20la%20Mesa%20Saludable%20x%20Pick%20a%20Good%20para%20mi%20CREW%20Party%20%28S/1%2C200%29%2C%20muchas%20gracias%21%21"><span>Mesa Saludable · S/1,200</span><span>→</span></a>
+          <a class="paybtn" href="https://wa.me/51987383855?text=Hola%20CREW%20%21%20Quiero%20visitarlos%20para%20tener%20m%C3%A1s%20informaci%C3%B3n%20del%20CREW%20Party%2C%20muchas%20gracias%21%21"><span>Quiero visitarlos</span><span>→</span></a>
         </div>
 
       </div></div>
